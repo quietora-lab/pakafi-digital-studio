@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakafi – Feedback</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/logo-pakafi.png">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-pakafi.png" alt="Logo Pakafi" class="logo">
+        <div class="brand-text">
+          <span class="brand-name">PAKAFI</span>
+          <span class="brand-tagline">Digital Studio Inc.</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="downloads.html">Téléchargements</a>
+        <a href="feedback.html" class="active">Feedback</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="about.html">À propos</a>
+        <a href="support.html">Support</a>
+        <a href="legal.html">Mentions légales</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">🌙</button>
+    </div>
+  </header>
+
+  <section class="section section-contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Vos retours comptent vraiment</h2>
+        <p>
+          Même si les produits Pakafi sont encore en construction, cette page est dédiée
+          à vos retours : idées, attentes, expériences, problèmes rencontrés ou souhaits.
+        </p>
+        <p class="contact-note">
+          Plus tard, vous pourrez choisir un produit précis dans la liste (application,
+          bot, IA) pour lier votre feedback à un projet particulier.
+        </p>
+      </div>
+
+      <form class="contact-form" action="mailto:Pakafi.dsi@protonmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Nom / Pseudonyme</label>
+          <input type="text" id="name" name="Nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse email (facultatif)</label>
+          <input type="email" id="email" name="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="product">Produit concerné (si applicable)</label>
+          <input type="text" id="product" name="Produit" placeholder="Nom de l’app, bot ou IA (si connu)">
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Impression globale</label>
+          <select id="rating" name="Note">
+            <option value="5">⭐⭐⭐⭐⭐ – Excellent</option>
+            <option value="4">⭐⭐⭐⭐ – Très bien</option>
+            <option value="3">⭐⭐⭐ – Correct</option>
+            <option value="2">⭐⭐ – À améliorer</option>
+            <option value="1">⭐ – Mauvaise expérience</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Votre feedback</label>
+          <textarea id="message" name="Message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary full-width">Envoyer mon feedback</button>
+
+        <p class="form-note">
+          Ce formulaire utilise votre application email pour l’envoi. Plus tard, il pourra
+          être relié à une base de données de feedback.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Pakafi Digital Studio Inc.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
