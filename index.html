@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="assets/logo-pakafi.png">
 </head>
 <body>
-  <!-- HEADER / NAVBAR -->
+  <!-- HEADER -->
   <header class="header">
     <div class="container header-content">
       <a href="#accueil" class="brand">
@@ -21,73 +21,88 @@
         </div>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        ☰
+      </button>
 
       <nav class="nav" id="nav">
         <a href="#accueil">Accueil</a>
-        <a href="#mission">Mission</a>
+        <a href="#apropos">À propos</a>
         <a href="#services">Services</a>
-        <a href="#approche">Approche</a>
-        <a href="#portfolio">Réalisations</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
+        <a href="#mentions">Mentions légales</a>
       </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+        🌙
+      </button>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO / ACCUEIL -->
   <section id="accueil" class="section hero">
     <div class="container hero-grid">
       <div class="hero-text">
-        <h1>Le digital qui s'adapte à vous,<br> pas l’inverse.</h1>
+        <p class="hero-eyebrow">Pakafi : le digital qui s’adapte à vous, pas l’inverse.</p>
+        <h1>Nous rendons la technologie réellement accessible à tous.</h1>
         <p class="hero-subtitle">
-          Chez Pakafi Digital Studio Inc., nous transformons la haute 
-          technologie en solutions simples, intuitives et accessibles à tous.
+          Pakafi Digital Studio Inc. accompagne les entreprises, indépendants et
+          débutants complets dans la création de solutions numériques simples,
+          efficaces et humaines.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn primary">Discuter d’un projet</a>
           <a href="#services" class="btn ghost">Voir nos services</a>
         </div>
         <p class="hero-note">
-          Pour les experts, les curieux et ceux qui “ne connaissent rien” à l’informatique :
-          nous faisons le pont entre vous et le numérique.
+          Pas besoin de “parler technique” : nous traduisons vos idées en solutions
+          digitales concrètes, étape par étape.
         </p>
       </div>
 
       <div class="hero-card">
-        <h2>Pourquoi Pakafi&nbsp;?</h2>
+        <h2>Ce que nous vous apportons</h2>
         <ul>
-          <li>✦ Explications sans jargon</li>
-          <li>✦ Solutions pensées pour les utilisateurs</li>
-          <li>✦ IA & outils numériques au service de l’humain</li>
-          <li>✦ Accompagnement de A à Z</li>
+          <li>✦ Une approche pédagogique, sans jargon</li>
+          <li>✦ Des outils adaptés aux vrais utilisateurs, pas aux experts</li>
+          <li>✦ L’intégration d’IA au service de votre quotidien</li>
+          <li>✦ Un accompagnement continu, même après la livraison</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- MISSION -->
-  <section id="mission" class="section">
+  <!-- À PROPOS -->
+  <section id="apropos" class="section">
     <div class="container two-columns">
       <div>
-        <h2>Notre mission</h2>
+        <h2>À propos de Pakafi Digital Studio Inc.</h2>
         <p>
-          Offrir à chaque personne — experte ou novice — la possibilité 
-          de profiter du digital sans stress, sans jargon et sans barrière.
+          Pakafi est né d’une idée simple : la technologie ne doit pas être une barrière,
+          mais un accélérateur. Nous pensons que chacun, quel que soit son niveau
+          technique, doit pouvoir profiter de la puissance du digital et de l’IA.
         </p>
         <p>
-          Nous créons des expériences élégantes, humaines et efficaces,
-          afin que chacun puisse comprendre, utiliser et apprécier les outils
-          numériques et l’intelligence artificielle.
+          Nous travaillons en duo humain + IA : vous apportez votre métier, vos
+          objectifs, vos contraintes réelles. Nous apportons la conception, le
+          design, l’architecture numérique et l’intégration intelligente de l’IA.
+        </p>
+        <p>
+          Résultat : des solutions claires, robustes et durables, qui respectent
+          vos valeurs et votre rythme d’apprentissage.
         </p>
       </div>
 
       <div class="mission-highlights">
-        <h3>Nos engagements</h3>
+        <h3>Nos valeurs</h3>
         <ul>
-          <li>Interfaces simples et rassurantes</li>
-          <li>Explications claires & pédagogiques</li>
-          <li>Protection stricte des données</li>
-          <li>Support & accompagnement après livraison</li>
+          <li><strong>Accessibilité :</strong> le digital pour tous, sans barrière.</li>
+          <li><strong>Transparence :</strong> vous comprenez ce que l’on fait, pourquoi et comment.</li>
+          <li><strong>Simplicité :</strong> chaque interface est pensée pour être intuitive.</li>
+          <li><strong>Respect :</strong> de vos données, de votre temps et de votre budget.</li>
         </ul>
       </div>
     </div>
@@ -96,118 +111,238 @@
   <!-- SERVICES -->
   <section id="services" class="section section-alt">
     <div class="container">
-      <h2>Nos services</h2>
+      <h2>Services</h2>
       <p class="section-intro">
-        Des idées aux solutions concrètes : nous concevons des outils vraiment accessibles.
+        Nous vous accompagnons de l’idée au produit final, avec un langage clair
+        et des solutions adaptées à votre réalité.
       </p>
 
       <div class="cards-grid">
-        <div class="card">
-          <h3>Sites web & mini-apps</h3>
-          <p>Sites vitrine modernes, rapides et faciles à utiliser.</p>
-        </div>
+        <article class="card">
+          <h3>Sites web & mini-applications</h3>
+          <p>
+            Création de sites vitrine et petites applications web claires, rapides
+            et adaptées à votre activité. Idéal pour présenter vos services ou
+            simplifier un processus interne.
+          </p>
+          <ul class="card-list">
+            <li>Sites vitrines professionnels</li>
+            <li>Landing pages pour projets ou produits</li>
+            <li>Espaces clients simples</li>
+          </ul>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Outils assistés par IA</h3>
-          <p>Assistants, automatisations, tableaux de bord intelligents.</p>
-        </div>
-
-        <div class="card">
-          <h3>Accompagnement & vulgarisation</h3>
           <p>
-            Ateliers pédagogiques, explications simples et guides clairs.
+            Intégration d’outils intelligents pour vous faire gagner du temps :
+            assistants internes, automatisations, pré-analyses, etc.
           </p>
-        </div>
+          <ul class="card-list">
+            <li>Assistants conversationnels internes</li>
+            <li>Automatisation de tâches répétitives</li>
+            <li>Tableaux de bord avec indicateurs clés</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Accompagnement & pédagogie</h3>
+          <p>
+            Nous vulgarisons le digital et l’IA pour votre équipe. Des explications
+            claires, des supports simples et des ateliers pratiques.
+          </p>
+          <ul class="card-list">
+            <li>Sessions d’onboarding digital</li>
+            <li>Guides d’utilisation illustrés</li>
+            <li>Ateliers d’acculturation à l’IA</li>
+          </ul>
+        </article>
       </div>
-    </div>
-  </section>
 
-  <!-- APPROCHE -->
-  <section id="approche" class="section">
-    <div class="container">
-      <h2>Notre approche</h2>
-
-      <div class="steps-grid">
-        <div class="step">
-          <span class="step-number">1</span>
-          <h3>Écoute & compréhension</h3>
-          <p>Nous traduisons vos besoins en solutions concrètes.</p>
-        </div>
-
-        <div class="step">
-          <span class="step-number">2</span>
-          <h3>Prototype rapide</h3>
-          <p>Vous testez et validez une première version claire.</p>
-        </div>
-
-        <div class="step">
-          <span class="step-number">3</span>
-          <h3>Déploiement & support</h3>
-          <p>
-            Mise en ligne + accompagnement pour une adoption totale.
-          </p>
-        </div>
+      <!-- Services détaillés -->
+      <div class="detailed-services">
+        <h3>Comment se déroule une collaboration ?</h3>
+        <ol>
+          <li><strong>Diagnostic :</strong> on clarifie votre besoin avec vos mots.</li>
+          <li><strong>Proposition :</strong> vous recevez un plan simple, sans jargon.</li>
+          <li><strong>Prototype :</strong> vous testez une première version rapidement.</li>
+          <li><strong>Itérations :</strong> on ajuste jusqu’à ce que ce soit fluide pour vous.</li>
+          <li><strong>Livraison & support :</strong> vous n’êtes pas laissé seul après la mise en ligne.</li>
+        </ol>
       </div>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
-  <section id="portfolio" class="section section-alt">
+  <section id="portfolio" class="section">
     <div class="container">
-      <h2>Réalisations (à venir)</h2>
-      <div class="placeholder-box">
-        Vous pourrez ajouter ici vos projets, captures d’écran et témoignages.
+      <h2>Portfolio</h2>
+      <p class="section-intro">
+        Pakafi est en phase de lancement. Cette section présentera prochainement
+        des études de cas, des prototypes et des projets clients (anonymisés si besoin).
+      </p>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card placeholder">
+          <h3>Projet #1 — Site vitrine</h3>
+          <p>Exemple de site clair pour présenter une activité de services.</p>
+        </article>
+        <article class="portfolio-card placeholder">
+          <h3>Projet #2 — Outil interne</h3>
+          <p>Mini-application pour simplifier un processus manuel répétitif.</p>
+        </article>
+        <article class="portfolio-card placeholder">
+          <h3>Projet #3 — Assistant IA</h3>
+          <p>Assistant conversationnel dédié à un métier précis.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section section-alt">
+    <div class="container">
+      <h2>Blog & ressources</h2>
+      <p class="section-intro">
+        Bientôt&nbsp;: des articles pour expliquer le digital et l’IA avec des mots simples,
+        des guides pas à pas et des retours d’expérience Pakafi.
+      </p>
+
+      <div class="blog-grid">
+        <article class="blog-card placeholder">
+          <h3>Comprendre l’IA sans être ingénieur</h3>
+          <p>Article à venir — une introduction claire à ce que l’IA peut (et ne peut pas) faire.</p>
+        </article>
+        <article class="blog-card placeholder">
+          <h3>Comment préparer un projet digital quand on débute</h3>
+          <p>Article à venir — les bonnes questions à se poser avant de se lancer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Je ne connais rien au digital, est-ce un problème ?</summary>
+          <p>
+            Absolument pas. C’est justement pour vous que Pakafi existe. Nous
+            traduisons vos besoins en solutions concrètes et nous expliquons chaque
+            étape avec des mots simples.
+          </p>
+        </details>
+
+        <details>
+          <summary>Travaillez-vous uniquement avec des entreprises ?</summary>
+          <p>
+            Non. Nous travaillons avec des indépendants, des petites structures,
+            des projets personnels ou associatifs, et des entreprises plus établies.
+          </p>
+        </details>
+
+        <details>
+          <summary>Quels sont vos tarifs&nbsp;?</summary>
+          <p>
+            Les tarifs dépendent de la complexité du projet. Nous privilégions une
+            approche transparente : après un premier échange gratuit, vous recevez
+            une proposition claire, sans surprise cachée.
+          </p>
+        </details>
+
+        <details>
+          <summary>Pouvez-vous m’aider à sécuriser mes données&nbsp;?</summary>
+          <p>
+            Oui. Nous intégrons la question de la confidentialité et de la sécurité
+            dès le début du projet, en tenant compte de votre contexte réel.
+          </p>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section-contact">
     <div class="container contact-grid">
       <div>
-        <h2>Nous contacter</h2>
+        <h2>Contact</h2>
         <p>
-          Une question, une idée ou un projet&nbsp;? Écrivez-nous.
+          Décrivez-nous simplement votre idée, votre problème ou votre besoin.
+          Nous reviendrons vers vous avec des pistes claires et compréhensibles.
         </p>
 
         <ul class="contact-info">
           <li><strong>Email :</strong> <a href="mailto:Pakafi.dsi@protonmail.com">Pakafi.dsi@protonmail.com</a></li>
         </ul>
+
+        <p class="contact-note">
+          Vous pouvez écrire dans la langue de votre choix (français, anglais, etc.).
+        </p>
       </div>
 
-      <form class="contact-form" action="mailto:Pakafi.dsi@protonmail.com" method="post" enctype="text/plain">
+      <form class="contact-form" id="contactForm" action="mailto:Pakafi.dsi@protonmail.com" method="post" enctype="text/plain">
         <div class="form-group">
-          <label>Nom / Organisation</label>
-          <input type="text" name="Nom" required>
+          <label for="name">Nom / Organisation</label>
+          <input type="text" id="name" name="Nom" required>
         </div>
 
         <div class="form-group">
-          <label>Email</label>
-          <input type="email" name="Email" required>
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="Email" required>
         </div>
 
         <div class="form-group">
-          <label>Type de projet</label>
-          <select name="Type de projet">
-            <option>Site web</option>
-            <option>Application / outil IA</option>
-            <option>Accompagnement / conseil</option>
-            <option>Autre</option>
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="Sujet" placeholder="Site web, outil IA, accompagnement..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Type de projet</label>
+          <select id="type" name="Type de projet">
+            <option value="Site web">Site web</option>
+            <option value="Application / outil IA">Application / outil IA</option>
+            <option value="Accompagnement / conseil">Accompagnement / conseil</option>
+            <option value="Autre">Autre</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label>Message</label>
-          <textarea name="Message" rows="5" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" required></textarea>
         </div>
 
         <button type="submit" class="btn primary full-width">Envoyer</button>
 
         <p class="form-note">
-          Le formulaire ouvrira votre application email.  
-          On pourra ajouter un vrai système d’envoi plus tard.
+          Le formulaire utilise votre application email pour l’envoi. Plus tard, nous
+          pourrons le connecter à un service d’envoi de formulaires (Formspree, Netlify, etc.).
         </p>
       </form>
+    </div>
+  </section>
+
+  <!-- MENTIONS LÉGALES -->
+  <section id="mentions" class="section section-alt">
+    <div class="container">
+      <h2>Mentions légales</h2>
+      <p class="section-intro">
+        Pakafi Digital Studio Inc. est un studio numérique en cours de structuration.
+        Les informations ci-dessous pourront être complétées une fois votre statut
+        juridique final déterminé (numéro d’entreprise, adresse légale, etc.).
+      </p>
+
+      <div class="legal-box">
+        <p><strong>Nom commercial :</strong> Pakafi Digital Studio Inc.</p>
+        <p><strong>Activité :</strong> conception de solutions numériques et outils assistés par IA, accompagnement et vulgarisation digitale.</p>
+        <p><strong>Contact principal :</strong> <a href="mailto:Pakafi.dsi@protonmail.com">Pakafi.dsi@protonmail.com</a></p>
+        <p class="legal-note">
+          Cette page ne constitue pas un avis juridique. Pour des obligations légales
+          spécifiques à votre pays ou province, il est recommandé de consulter un
+          professionnel du droit.
+        </p>
+      </div>
     </div>
   </section>
 
